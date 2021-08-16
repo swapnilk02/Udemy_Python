@@ -1,4 +1,3 @@
-from 128 tuples of
 albums = [
     ("Welcome to my Nightmare", "Alice Cooper", 1975,
      [
@@ -37,4 +36,32 @@ albums = [
          (4, "Kentish Town Waltz"),
      ]
      ),
+]
+SONG_LIST_INDEX=3
+SONG_TITLE_INDEX=1
+# on above line....we defined one constant...By Convention....
+# the constant in the python are represented by all capital letters
+while True:
+    print("please choose ur album(invalid choice exist)")
+    for index,(name,artist,year,songs) in enumerate(albums): #  this line is imp....enumerate will return ...index and the item in list which in our case are tuples
+        print("{}: {} ".format(index+1,name))
+    choice=int(input())
+    if 1<=choice<=len(albums):
+        songs_list=albums[choice-1][SONG_LIST_INDEX]
+    else:
+        break
+
+    print("please chooose song:")
+    for index,(track_number,song) in enumerate(songs_list):
+        print("{}: {}".format(index+1,song))
+
+    song_choice=int(input())
+    if 1<=song_choice <= len(songs_list):
+        title=songs_list[song_choice-1][SONG_TITLE_INDEX]
+    else:
+        break
+
+    print("playing {}".format(title))
+    print("="*40)
+
 
