@@ -22,8 +22,8 @@ panagram="the quick brown fox jump over the lazy dog"
 words=panagram.split()
 print(words)
 
-
 numbers="9,223,036,854,775,807"
 print(numbers.split(",")) # what we are oing here is sliptting the string at the places where their is  ,
 
 #remember the split  will convert the sting to  a list while  join will convert the list to string
+
