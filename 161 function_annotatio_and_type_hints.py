@@ -4,6 +4,7 @@ def multiplication(x: float,y: float) -> float:    # here we are providing the f
     result=x*y                                     # this will be usefull while the time of calling
     return result
 
+# supppose if we replace the float at above code with string....still the code works fine...
 
 answer=multiplication(10,2)  # while typing this thing u will get the expected data type that we difined in above function signature
 print(answer)
@@ -20,6 +21,3 @@ def multiplication(x: float = 4,y: float = 5) -> float:   # here we are defining
 
 
 print(multiplication())   # calling the function using the default values
-
-
-
