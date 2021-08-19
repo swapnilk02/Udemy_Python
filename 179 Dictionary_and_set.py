@@ -12,7 +12,7 @@
 vehicles = {
     'dream': 'Honda 250T',
     'roadster': 'BMW R1100',
-    'er5': 'Kawasaki ER5',
+    'er5': 'Kawasaki ER5',                  # here we can also use double quotes
     'can-am': 'Bombardier Can-Am 250',
     'virago': 'Yamaha XV250',
     'tenere': 'Yamaha XT650',
@@ -27,6 +27,10 @@ my_car=vehicles['fiesta']
 print(my_car)
 
 learner=vehicles.get("er5")
+print(learner)
+
+learner=vehicles.get("xyz",0)    # if the key is nor theit then will return the default value that user defines
+# ...here we defined 0
 print(learner)
 
 #above are two ways we can get the element in the dictionaries.......
@@ -89,3 +93,6 @@ print(result)                                # .hence we can provide the default
 
 for key,value in vehicles.items():
     print(key,value,sep=": ")
+
+
+# just to summeries....lists are enclosed in [],tuplese are enclosed in (), and dictionaries are enclosed in {}
