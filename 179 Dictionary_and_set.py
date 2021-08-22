@@ -96,3 +96,13 @@ for key,value in vehicles.items():
 
 
 # just to summeries....lists are enclosed in [],tuplese are enclosed in (), and dictionaries are enclosed in {}
+
+# we can use any object which is immutable as key for dictionary
+#hence we can also use a tuple as the key for dictionary...but only limitation is the value in the tuples also should be immutable
+#hence suppose if the values in teh tuple are list...then we can not use that tuple as key...as the list is immutable
+
+
+
+#https://docs.python.org/3.9/library/stdtypes.html#dict
+
+# for more information...follow above link
