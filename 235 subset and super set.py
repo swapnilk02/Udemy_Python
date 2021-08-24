@@ -6,4 +6,3 @@ print(f"animal is superset of birds : {animals.issuperset(birds)}")
 
 print(birds<=animals)   # bird is subset of animla
 print(birds<animals)  #bird is proper subset of animal
- 
