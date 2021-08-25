@@ -1,3 +1,5 @@
+# note: the shelve lecture not done in depth ....need to revisit the lecture for better understanding
+
 # shelve and the dictionary pritty much similar...the only difference is that we are incase of the shelve ..
 # ..the key has to be a string and the value will be pickled
 import shelve
