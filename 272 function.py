@@ -63,5 +63,4 @@ def centre_text_return(*args,sep=" "):
     for arg in args:
         text+=arg+sep
     left_margin = (80-len(text)) // 2
-    return " "*left_margin+text    # here we are using the return keyword to returnt the value
-
+    return " "*left_margin+text    # here we are using the return keyword to return the value
